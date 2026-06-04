@@ -234,3 +234,110 @@ ul{
     font-weight: 700;
     cursor: pointer;
 }
+
+/* our stories */
+.stories {
+    width: 100%;
+    padding: 60px 0 90px;
+    background:
+        linear-gradient(to top, rgba(254, 163, 1, 0.28), rgba(255, 255, 255, 0.9)),
+        url("assets/bg.png");
+    background-repeat: repeat;
+}
+
+.stories-grid{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.6fr 0.6fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.big-card {
+    grid-row: span 2;
+}
+.story-image {
+    position: relative;
+}
+.story-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.big-card .story-image img {
+    height: 340px;
+}
+.small-card .story-image img {
+    height: 175px;
+}
+.date-badge {
+    position: absolute;
+    left: 32px;
+    bottom: -20px;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.small-card .date-badge {
+    left: 32px;
+    bottom: -18px;
+
+    padding: 9px 18px;
+
+    font-size: 12px;
+}
+.cyan-date {
+    background-color: #3cd8e8;
+}
+
+.green-date {
+    background-color: #95b226;
+}
+
+.purple-date {
+    background-color: #5d58f0;
+}
+.story-content {
+    padding: 48px 32px 34px;
+}
+.big-card .story-content h3 {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 800;
+
+    margin-bottom: 42px;
+}
+.big-card .story-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666666;
+}
+.small-card .story-content h4 {
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 800;
+}
+
+.view-btn{
+    background-color: #111111;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 14px 42px;
+    border-radius: 12px;
+    margin: 70px auto 0;
+    display: block;
+
+    cursor: pointer;
+}
+
