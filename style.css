@@ -407,3 +407,14 @@ ul{
     width: 34px;
     height: 34px;
 }
+
+
+/* marquee stylee */
+.notice-marquee {
+    width: 100%;
+    background-color: #fea301;
+    color: white;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
