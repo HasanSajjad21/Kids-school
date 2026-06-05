@@ -404,8 +404,8 @@ ul{
     gap: 10px;
 }
 .social-icons img {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -417,4 +417,178 @@ ul{
     padding: 12px 0;
     font-size: 16px;
     font-weight: 700;
+}
+
+/* Resoponsive */
+
+/* Material menu icon hidden on desktop */
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    color: #111111;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+       body {
+        background-color: #ffffff;
+    }
+    /* navbar resoponsive */
+    .navbar{
+        width: calc(100% - 32px);
+        height: 70px;
+        border-bottom: 1px solid #FEA301;
+    }
+    .logo-container h2{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    .contact-btn{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+
+    .logo-container img{
+        width: 46px;
+    }
+
+    /* banner responsive */
+    .banner{
+        width: calc(100% - 32px);
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 24px;
+        padding: 20px 0 40px;
+    }
+     .banner-content {
+        width: 100%;
+    }
+     .banner-img {
+        width: 100%;
+        justify-content: center;
+    
+    }
+     .banner-img img {
+        width: 100%;
+        max-width: 340px;
+    }
+
+      .banner-content h1 {
+        font-size: 32px;
+        line-height: 1.15;
+        margin-bottom: 18px;
+    }
+      .banner-content p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+     .enroll-btn {
+        padding: 12px 32px;
+        font-size: 15px;
+    }
+
+    /* Curriculum section */
+    .curriculum{
+            width: calc(100% - 32px); /* 16px left + 16px right */
+            padding: 45px 0;
+    }
+    .section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    }
+    .curriculum-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    }
+    .curriculum-card {
+    width: 100%;
+    min-height: auto;
+    padding: 38px 32px;
+    }
+    .curriculum-card img {
+    width: 120px;
+    margin-bottom: 24px;
+    }
+    .curriculum-card h3 {
+    font-size: 20px;
+    margin-bottom: 22px;
+    }
+    .curriculum-card p {
+    font-size: 13px;
+    margin-bottom: 24px;
+    }
+    .arrow-group {
+    display: none;
+    }
+
+    /* stories section responsive */
+    .stories {
+    padding: 45px 0 55px;
+    }
+    .stories-grid {
+    width: calc(100% - 32px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    }
+    .big-card {
+    display: none;
+    }
+    .small-card .story-image img {
+    height: 110px;
+    }
+    .small-card .date-badge {
+    left: 16px;
+    bottom: -14px;
+    padding: 7px 12px;
+    font-size: 9px;
+    }
+    .small-card .story-content {
+    padding: 34px 16px 22px;
+    }
+    .small-card .story-content h4 {
+    font-size: 12px;
+    line-height: 1.5;
+    }
+    .view-btn {
+    margin-top: 35px;
+    padding: 12px 42px;
+    font-size: 15px;
+    }
+
+    /* Footer responsive */
+    .footer{
+        padding: 55px 24px;
+    }
+    .footer-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    }
+    .footer-logo img {
+    width: 60px;
+    }
+    .footer-logo h2 {
+    font-size: 30px;
+    }
+    .footer-column p {
+    font-size: 14px;
+    line-height: 1.5;
+    }
+    .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    }
+    .footer-links {
+    gap: 14px;
+    }
+    .social-icons img {
+    width: 32px;
+    height: 32px;
+    }
+
+    
 }
